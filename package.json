@@ -1,0 +1,16 @@
+{
+  "name": "shop-lists",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview --base /shop-lists/",
+    "validate": "node scripts/validate-data.mjs"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "vite": "^7.1.12"
+  }
+}

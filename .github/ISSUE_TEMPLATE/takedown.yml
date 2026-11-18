@@ -1,0 +1,52 @@
+name: 下架／更正申請
+description: 申請自清單移除店家資料，或回報需要更正的內容
+title: "[下架／更正] "
+labels: ["takedown-or-correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感謝告知。此表單用於處理店家下架或資料更正申請。
+        請盡量提供可核對的 Threads 帳號與店名；聯絡方式為選填。
+  - type: input
+    id: store_name
+    attributes:
+      label: 店名
+      description: 清單上顯示的店家名稱（若原本空白可填 Threads 帳號）
+      placeholder: 例如：亞太甜蝦
+    validations:
+      required: true
+  - type: input
+    id: threads_handle
+    attributes:
+      label: Threads 帳號
+      description: 不含 @
+      placeholder: 例如：yataimima_shrimp
+    validations:
+      required: true
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: 要下架或更正
+      options:
+        - 下架（請自清單移除）
+        - 更正資料
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: correct_data
+    attributes:
+      label: 正確資料
+      description: 若是更正，請說明應改成什麼；若是下架，可補充原因（選填）。
+      placeholder: 例如：商店連結應改為……／品項應改為……
+    validations:
+      required: false
+  - type: input
+    id: contact
+    attributes:
+      label: 聯絡方式（選填）
+      description: 方便我們回覆；不會公開在網站上。也可只透過 GitHub 討論。
+      placeholder: 例如：GitHub 帳號或其他可聯絡管道
+    validations:
+      required: false

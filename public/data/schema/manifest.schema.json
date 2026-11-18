@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://juchiang77608.github.io/shop-lists/data/schema/manifest.schema.json",
+  "title": "ListsManifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["lists"],
+  "properties": {
+    "lists": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "file"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "file": {
+            "type": "string",
+            "pattern": "^lists/.+\\.json$"
+          }
+        }
+      }
+    }
+  }
+}

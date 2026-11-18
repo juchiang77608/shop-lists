@@ -47,13 +47,14 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
+  z-index: 0;
   pointer-events: none;
-  opacity: 0.35;
+  opacity: 0.22;
   background-image:
     linear-gradient(rgba(28, 42, 36, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(28, 42, 36, 0.03) 1px, transparent 1px);
   background-size: 28px 28px;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 85%);
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), transparent 55%);
 }
 
 a {
@@ -75,6 +76,7 @@ select:focus-visible {
 
 #app {
   position: relative;
+  z-index: 1;
   min-height: 100vh;
 }
 
@@ -345,10 +347,10 @@ select:focus-visible {
   align-items: center;
   padding: 0.18rem 0.55rem;
   border-radius: 999px;
-  background: rgba(47, 107, 79, 0.12);
+  background: rgba(47, 107, 79, 0.16);
   color: var(--leaf-deep);
   font-size: 0.78rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .badge--soft {
@@ -361,11 +363,12 @@ select:focus-visible {
   align-items: center;
   padding: 0.28rem 0.65rem;
   border-radius: 999px;
-  background: var(--paper-2);
-  border: 1px solid var(--line);
+  background: #f2f6f3;
+  border: 1px solid #9aafa3;
   text-decoration: none;
   font-size: 0.86rem;
-  color: var(--leaf-deep);
+  font-weight: 600;
+  color: var(--ink);
 }
 
 .link-pill:hover {
@@ -412,10 +415,14 @@ select:focus-visible {
 }
 
 .store-table th {
-  background: rgba(231, 238, 232, 0.9);
-  color: var(--ink-soft);
-  font-weight: 600;
+  background: #e2ebe4;
+  color: var(--ink);
+  font-weight: 700;
   white-space: nowrap;
+}
+
+.store-table td {
+  color: var(--ink);
 }
 
 .store-table tbody tr {

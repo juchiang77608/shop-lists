@@ -1,6 +1,6 @@
 /** 站點設定集中在這裡，方便改連結與文案。 */
 export const siteConfig = {
-  title: 'Threads 開店清單',
+  title: 'Threads 好店清單',
   description:
     '整理自 Threads 公開留言的小型網路店家清單。可依分類、關鍵字篩選，並連結至 Threads、賣貨便與 LINE。',
   ownerName: 'Janice',

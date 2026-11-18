@@ -1,15 +1,15 @@
 :root {
   --ink: #1c2a24;
   --ink-soft: #3d5248;
-  --muted: #5f7268;
+  --muted: #4a5d54;
   --paper: #f3f6f2;
   --paper-2: #e7eee8;
   --leaf: #2f6b4f;
   --leaf-deep: #1f4a36;
   --accent: #c45c26;
   --accent-soft: #f0d7c6;
-  --line: #c9d5cd;
-  --card: rgba(255, 255, 255, 0.78);
+  --line: #b7c6bc;
+  --card: #ffffff;
   --shadow: 0 18px 40px rgba(28, 42, 36, 0.08);
   --radius: 18px;
   --font-display: "Fraunces", "Noto Serif TC", Georgia, serif;
@@ -80,7 +80,7 @@ select:focus-visible {
 
 .site-header {
   padding: 2.4rem 1.25rem 1.5rem;
-  animation: rise 0.7s ease both;
+  animation: rise 0.55s ease-out;
 }
 
 .site-header__inner {
@@ -120,16 +120,6 @@ select:focus-visible {
   display: grid;
   gap: 1.5rem;
 }
-
-.section {
-  animation: rise 0.65s ease both;
-}
-
-.section:nth-of-type(2) { animation-delay: 0.05s; }
-.section:nth-of-type(3) { animation-delay: 0.1s; }
-.section:nth-of-type(4) { animation-delay: 0.15s; }
-.section:nth-of-type(5) { animation-delay: 0.2s; }
-.section:nth-of-type(6) { animation-delay: 0.25s; }
 
 .section__head h2 {
   margin: 0;
@@ -248,7 +238,8 @@ select:focus-visible {
 .field span,
 .toggle span {
   font-size: 0.88rem;
-  color: var(--muted);
+  font-weight: 600;
+  color: var(--ink-soft);
 }
 
 .field input,
@@ -280,13 +271,14 @@ select:focus-visible {
 
 .chip {
   appearance: none;
-  border: 1px solid var(--line);
+  border: 1px solid #9aafa3;
   background: #fff;
-  color: var(--ink-soft);
+  color: var(--ink);
   border-radius: 999px;
   padding: 0.45rem 0.9rem;
   font: inherit;
   font-size: 0.92rem;
+  font-weight: 500;
   cursor: pointer;
   transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
 }
@@ -313,7 +305,7 @@ select:focus-visible {
 .store-card {
   padding: 1rem 1.1rem 1.15rem;
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.88);
+  background: #fff;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   transition: transform 0.18s ease, box-shadow 0.18s ease;
@@ -401,7 +393,7 @@ select:focus-visible {
   overflow-x: auto;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.88);
+  background: #fff;
   box-shadow: var(--shadow);
 }
 
@@ -458,8 +450,6 @@ select:focus-visible {
   font-size: 0.92rem;
   display: grid;
   gap: 0.25rem;
-  animation: rise 0.7s ease both;
-  animation-delay: 0.3s;
 }
 
 .loading,
@@ -498,11 +488,9 @@ code {
 
 @keyframes rise {
   from {
-    opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(8px);
   }
   to {
-    opacity: 1;
     transform: translateY(0);
   }
 }

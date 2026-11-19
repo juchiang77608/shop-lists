@@ -2,7 +2,7 @@
 
 整理自 Threads 公開留言的小型網路店家清單（靜態網站）。
 
-網站（上線後）：https://juchiang77608.github.io/shop-lists/
+網站：https://shops.janicechiang.dev/
 
 維護者：Janice（[@juchiang77608](https://github.com/juchiang77608)）
 
@@ -23,14 +23,14 @@ npm run validate
 npm run dev
 ```
 
-建置（`base` 為 `/shop-lists/`）：
+建置（`base` 為 `/`）：
 
 ```bash
 npm run build
 npm run preview
 ```
 
-預覽請開啟 `http://localhost:4173/shop-lists/`。
+預覽請開啟 `http://localhost:4173/`。
 
 ## 如何新增一份清單
 

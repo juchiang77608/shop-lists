@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview --base /shop-lists/",
+    "preview": "vite preview --base /",
     "validate": "node scripts/validate-data.mjs"
   },
   "devDependencies": {

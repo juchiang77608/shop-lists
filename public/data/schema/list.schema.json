@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://juchiang77608.github.io/shop-lists/data/schema/list.schema.json",
+  "$id": "https://shops.janicechiang.dev/data/schema/list.schema.json",
   "title": "ShopList",
   "type": "object",
   "additionalProperties": false,

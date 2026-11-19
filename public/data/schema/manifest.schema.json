@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://juchiang77608.github.io/shop-lists/data/schema/manifest.schema.json",
+  "$id": "https://shops.janicechiang.dev/data/schema/manifest.schema.json",
   "title": "ListsManifest",
   "type": "object",
   "additionalProperties": false,

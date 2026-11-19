@@ -5,7 +5,7 @@ export const siteConfig = {
     '整理自 Threads 公開留言的小型網路店家清單。可依分類、關鍵字篩選，並連結至 Threads、賣貨便與 LINE。',
   ownerName: 'Janice',
   ownerGithub: 'juchiang77608',
-  siteUrl: 'https://juchiang77608.github.io/shop-lists/',
+  siteUrl: 'https://shops.janicechiang.dev/',
   githubRepoUrl: 'https://github.com/juchiang77608/shop-lists',
   /** 下架／更正 Issue 表單（對應 .github/ISSUE_TEMPLATE/takedown.yml） */
   issueFormUrl:
